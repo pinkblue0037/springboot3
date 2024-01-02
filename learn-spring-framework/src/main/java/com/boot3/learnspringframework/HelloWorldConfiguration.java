@@ -8,6 +8,6 @@ public class HelloWorldConfiguration {
 	
 		@Bean
 		public String name() {
-			return "init";
+			return "initCommit";
 		}
 }
