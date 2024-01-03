@@ -38,4 +38,16 @@ Dependency Injection : inversion of control 제어 반전
 @ComponentScan
 정의한 적은 없던거 같은데... 어디서 자동되는듯 아마 @Controller 일듯.
 
+@Component @Bean 차이점
+Component 방식을 추천한다. spring이 쉽게 bean 생성 관리 해줌
+@bean 을 선택한다면. 여러 체크 해야 할 부분들이 있음.
+라이브러리에 있는 Bean 을 생성할 때 사용하면 좋다?? 헐 !!!!
+
+빈 생성 전에 비지니스 로직이 많거나 제3자 라이브러리를 사용해야 할때.
+
+우리는 왜 의존성을 가지고 있을까.
+애플리케이션 레이어가 web, bussiness, data 레이어 들로 나누어 있고 서로 의존성이 있다.
+스프링프레임워크가 객체의 생명주기를 관리해준다.
+@Component, @Autowired 같은 것들로 해줌.
+
 
