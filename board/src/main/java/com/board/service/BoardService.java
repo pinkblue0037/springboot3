@@ -20,11 +20,9 @@ public class BoardService {
 	public List<Board> findAll(){
 		return boardRepository.findAll();
 	}
-	
-	/**
-	public List<Board> addNewList(Board board){
-		lists.add(new Board(7, board.getTitle(), board.getDesc(), LocalDate.now(), "admin"));
-		return lists;
+
+	public List<Board> findByWriter(String username) {
+		return boardRepository.findByWriter(username);
 	}
-	**/
+	
 }

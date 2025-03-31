@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
+import lombok.Getter;
 
 @Data
 @Entity
@@ -31,4 +32,5 @@ public class Board {
 	private String description;
 	private LocalDate date;
 	private String writer;
+	
 }
